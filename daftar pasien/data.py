@@ -12,7 +12,7 @@ def baca_data_dari_csv():
             baca = csv.DictReader(f)
             for baris in baca:
                 daftar_sementara.append(baris)
-                peta_pasien[baris['rekam_medis']] = baris # Masuk ke peta
+                peta_pasien[baris['rekam_medis']] = baris 
         antrean.muat_data(daftar_sementara)
     except:
         antrean = Queue()
