@@ -17,14 +17,11 @@ ANTRIAN RUMAH SAKIT
     """)
 
 def main():
-    # Baca data dari file saat program mulai
     antrean = baca_data_dari_csv()
 
     while True:
         tampilkan_menu()
         pilih = input("Pilih Menu: ")
-
-        # MENU UTAMA PAKAI IF ELSE
         if pilih == '1':
             antrean = tambah_pasien(antrean)
         elif pilih == '2':
