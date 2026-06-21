@@ -4,7 +4,7 @@ class Queue:
         self.data = []
     def enqueue(self, item):
         if item['prioritas'] == '1. Gawat Darurat':
-            self.data.insert(0, item)  # Masuk paling depan
+            self.data.insert(0, item)  
         elif item['prioritas'] == '2. Lanjut Usia / Ibu Hamil':
             pos = 0
             for d in self.data:
