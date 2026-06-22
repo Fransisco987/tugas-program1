@@ -13,8 +13,6 @@ def cari_pasien(kunci, nilai):
                 hasil.append(d)
     return hasil
 
-
-
 '''ini algoritma sorting'''
 def urutkan_pasien(daftar, kunci, naik=True):
     n = len(daftar)
